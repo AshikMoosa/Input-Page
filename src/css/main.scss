@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Poppins:wght@400;500;600;700&display=swap");
+
+body {
+  background: white;
+  margin: 0;
+  font-family: "Noto Sans JP";
+  font-weight: 500;
+}
+
+:root {
+  --default: #e0e0e0;
+  --pri-white: white;
+  --primary: #2962ff;
+  --secondary: #455a64;
+  --danger: #d32f2f;
+}
+
+.navbar {
+  nav {
+    width: 18em;
+    background: black;
+    height: 100vh;
+    padding: 2em 0em;
+    position: fixed;
+    top: 0;
+    a {
+      text-decoration: none;
+      font-size: 16px;
+      color: #9e9e9e;
+    }
+    a:hover {
+      color: white;
+      font-weight: 700;
+    }
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 7em 0;
+
+      li {
+        padding: 1em 5em;
+      }
+    }
+    .logo {
+      padding: 2em 5em;
+    }
+  }
+}
+
+.grid-section,
+.input-section,
+.color-section {
+  margin-left: 25em;
+}
+
+.main {
+  margin-left: 25em;
+  button {
+    height: 2.5em;
+    box-shadow: 0 0 3px gray;
+    border-radius: 5px;
+    font-size: 16px;
+    border: 1px solid grey;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  .default {
+    background: #e0e0e0;
+    border: none;
+  }
+  .default:hover {
+    background: #aeaeae;
+    border: none;
+  }
+  .outline {
+    border: 1px solid #3d5afe;
+    color: var(--primary);
+  }
+  .outline:hover {
+    background: #2962ff1a;
+  }
+  .text {
+    border: none;
+    color: var(--primary);
+    box-shadow: none;
+  }
+
+  .text:hover {
+    background: #2962ff1a;
+  }
+  .pri-white {
+    background: var(--pri-white);
+  }
+  .primary {
+    background: var(--primary);
+    color: white;
+  }
+  .primary:hover {
+    background: #0039cb;
+  }
+  .secondary {
+    background: var(--secondary);
+    color: white;
+  }
+  .secondary:hover {
+    background: #1c313a;
+  }
+
+  .danger {
+    background: var(--danger);
+    color: white;
+  }
+  .danger:hover {
+    background: #9a0007;
+  }
+
+  .btn-simple {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5em;
+  }
+
+  .btn-disabled {
+    padding: 3em 0em;
+    display: grid;
+    grid-template-columns: 5.5em 5.5em;
+    grid-gap: 2.5em 10em;
+  }
+
+  .btn-icon {
+    display: flex;
+    flex-direction: row;
+    column-gap: 12em;
+    button {
+      width: 8em;
+    }
+  }
+
+  .btn-size {
+    padding-top: 3em;
+    display: flex;
+    flex-direction: row;
+    column-gap: 8em;
+  }
+
+  .sm {
+    height: 2em;
+    width: 5em;
+  }
+  .md {
+    height: 2.5em;
+    width: 6em;
+  }
+  .lg {
+    height: 3em;
+    width: 7em;
+  }
+
+  .btn-color {
+    padding-top: 3em;
+    display: grid;
+    grid-template-columns: 5.5em 5.5em 5.5em 5.5em;
+    grid-gap: 3em 8em;
+  }
+}
+
+.input-section {
+  padding-right: 4em;
+  label {
+    font-size: 12px;
+  }
+  input::-webkit-input-placeholder {
+    font-size: 14px;
+    color: #828282;
+    font-weight: 500;
+    padding-left: 1em;
+  }
+  .default {
+    height: 4em;
+    border-radius: 8px;
+    box-sizing: border-box;
+    border: 1px solid #828282;
+  }
+
+  .sm {
+    height: 2.5em;
+    border-radius: 8px;
+    box-sizing: border-box;
+    border: 1px solid #828282;
+  }
+
+  .inp-simple {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  .error {
+    border: 1px solid #d32f2f;
+  }
+  .inp-helper {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    column-gap: 8em;
+    padding: 1em 0em;
+  }
+
+  .inp-icon {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    column-gap: 8em;
+    padding: 1em 0em;
+    input {
+      text-align: center;
+    }
+    .phone {
+      position: absolute;
+      min-width: 30px;
+      padding: 32px 0px;
+    }
+    .lock {
+      position: absolute;
+      min-width: 30px;
+      padding: 32px 0px;
+      align-self: flex-end;
+    }
+  }
+  .inp-size {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    column-gap: 8em;
+    padding: 1em 0em;
+  }
+  .inp-fullwidth {
+    display: inline-grid;
+    padding: 1em 0em;
+    width: 100%;
+  }
+  .inp-multiline {
+    label {
+      padding: 1em 0em;
+    }
+    display: inline-grid;
+    padding: 1em 0em;
+    box-sizing: border-box;
+    border-bottom: 10px;
+  }
+}
